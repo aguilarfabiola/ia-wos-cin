@@ -1,0 +1,21 @@
+﻿Archivos encontrados: 403
+Filas leídas: 400,520  |  UT únicos: 400,520  |  esperado: 400,520
+Duplicados eliminados: 0
+
+Archivos por bloque (encontrados / esperados):
+  P1       63 / 63   OK
+  P2       58 / 58   OK
+  P3/P4   114 / 114  OK
+  P5       86 / 86   OK
+  P6       82 / 82   OK
+
+Archivos con menos de 1000 registros (deberían ser solo los últimos lotes):
+  savedrecs (86).txt: 748 registros  (último lote de P2 o P6; clasificado como P6)
+  savedrecs - 2026-10-07T203656.951.txt: 980 registros  (último lote de P5; clasificado como P5)
+  savedrecs - 2026-10-07T205133.009.txt: 969 registros  (último lote de P4; clasificado como P3/P4)
+  savedrecs - 2026-10-07T210810.005.txt: 47 registros  (último lote de P3; clasificado como P3/P4)
+  savedrecs - 2026-10-07T212355.814.txt: 748 registros  (último lote de P2 o P6; clasificado como P2)
+  savedrecs - 2026-10-07T214130.878.txt: 28 registros  (último lote de P1; clasificado como P1)
+
+Guardado wos_unido.txt con 400,520 registros únicos.
+✔ Está completo.
