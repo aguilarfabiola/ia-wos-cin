@@ -96,3 +96,12 @@ Rocío Guajardo González (RMG) y Fabiola Aguilar Rojas (FAR) se dividieron las 
 - **Revisión del protocolo, scripts y documentación.** Las autoras revisaron y validaron el contenido y el código, y asumen la responsabilidad por ellos. Las instrucciones anteriores documentan el uso de `muestreo_cin.py` y `extraer_ut.py` para reproducir el muestreo y generar la lista de UT para el intercambio entre áreas.
 
 La codificación de los artículos es exclusivamente humana.
+
+## Declaración de uso de inteligencia artificial generativa
+
+Se utilizaron herramientas de inteligencia artificial generativa como apoyo en la elaboración del protocolo, los scripts y la documentación del proyecto:
+
+- **Protocolo y documentación.** Se utilizó Claude (Anthropic), modelo Claude Opus 5.5, en claude.ai, para proponer la estructura del protocolo y redactar la versión inicial de este README.
+- **Programación.** Se utilizó Claude para escribir los scripts `muestreo_cin.py`, `extraer_ut.py` y `verificar_wos.py`.
+
+Las autoras revisaron y validaron el contenido y el código del proyecto, y asumen la responsabilidad por su uso y por los resultados presentados. La asistencia en la programación de los scripts se distingue de la codificación de los artículos, que es exclusivamente humana.
