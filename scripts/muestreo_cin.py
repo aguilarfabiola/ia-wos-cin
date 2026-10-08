@@ -117,6 +117,14 @@ def dt_valido(dt):
     return "article" in partes and partes <= DT_PERMITIDOS
 
 
+def idioma_valido(la):
+    """Acepta registros con al menos un idioma permitido (p. ej. 'English; Spanish')."""
+    if pd.isna(la):
+        return False
+    partes = {p.strip().lower() for p in str(la).split(";") if p.strip()}
+    return bool(partes & IDIOMAS)
+
+
 def cuotas_mayor_resto(tamanos, n):
     total = sum(tamanos.values())
     exactas = {k: n * v / total for k, v in tamanos.items()}
@@ -154,7 +162,7 @@ def main():
     sin_anio = df["PY_num"].isna()
     fuera_anio = ~sin_anio & ~df["PY_num"].isin(ANIOS)
     mal_tipo = ~df["DT"].apply(dt_valido)
-    mal_idioma = ~df["LA"].astype("string").str.strip().str.lower().isin(IDIOMAS)
+    mal_idioma = ~df["LA"].apply(idioma_valido)
     flujo["descartados_sin_PY"] = int(sin_anio.sum())
     flujo["descartados_PY_fuera_rango"] = int(fuera_anio.sum())
     flujo["descartados_tipo_documento"] = int((~sin_anio & ~fuera_anio & mal_tipo).sum())
